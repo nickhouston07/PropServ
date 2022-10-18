@@ -1,0 +1,25 @@
+<?php # PropServ header - header.html
+// This page begins the HTML header for the site.
+
+// Start output buffering:
+ob_start();
+
+// Initialize a session:
+session_start();
+
+// Check for a $page_title value:
+if (!isset($page_title)) {
+	$page_title = 'Login';
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title><?php echo $page_title; ?></title>
+	<link rel="stylesheet" href="includes/layout.css">
+</head>
+<body>
+<div id="Header">PropServ</div>
+<div id="Content">
+<!-- End of Header -->
